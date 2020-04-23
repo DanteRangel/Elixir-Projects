@@ -5,6 +5,6 @@ uri = URI('http://127.0.0.1:4000/api/t')
     Thread.new do 
         Net::HTTP.post_form(uri, 'event' => 'sent_a_message', 'user_id' => 'xyz')
     end
-    sleep(.5)
+    sleep(0.5)
   end
 end
